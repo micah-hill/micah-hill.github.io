@@ -6,9 +6,29 @@
     <title>Micah Hill - Senior IT Leader | Let's Build Something Amazing Together</title>
     
     <!-- SEO & Performance Meta Tags -->
-    <meta name="description" content="Senior IT Leader with 12+ years transforming businesses through cloud infrastructure. Currently managing 90+ team members and 100K+ VMs at Rackspace. Ready for your next challenge!">
-    <meta name="keywords" content="IT Management, Cloud Infrastructure, VMware, AWS, Digital Transformation, Enterprise Technology, Team Leadership, San Antonio">
-    <meta name="author" content="Micah Hill">
+    <!-- Enhanced SEO Meta Tags -->
+<title>Micah Hill - Senior IT Management Leader | Cloud Infrastructure Expert | San Antonio</title>
+<meta name="description" content="Senior IT Management professional with 12+ years at Rackspace Technology. Expert in managing 90+ global team members, 100K+ VMs, and driving $10M+ revenue growth. Available for leadership opportunities in San Antonio, TX.">
+<meta name="keywords" content="IT Management, Cloud Infrastructure, VMware Expert, AWS, Digital Transformation, Enterprise Technology, Team Leadership, San Antonio IT, Rackspace Technology, Senior Manager">
+<meta name="author" content="Micah Hill">
+<meta name="robots" content="index, follow">
+
+<!-- Location SEO -->
+<meta name="geo.region" content="US-TX">
+<meta name="geo.placename" content="San Antonio">
+<meta name="geo.position" content="29.4241;-98.4936">
+
+<!-- Enhanced Open Graph -->
+<meta property="og:title" content="Micah Hill - Senior IT Management Leader">
+<meta property="og:description" content="12+ years managing enterprise cloud infrastructure at Rackspace Technology. Leading 90+ global team members and 100K+ VMs with $10M+ revenue impact.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://micahhill.info">
+<meta property="og:site_name" content="Micah Hill - IT Leadership Portfolio">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Micah Hill - Senior IT Management Leader">
+<meta name="twitter:description" content="Expert in cloud infrastructure and digital transformation with proven track record at Rackspace Technology">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -58,7 +78,41 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--accent-primary);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* Enhanced Focus Indicators */
+*:focus {
+    outline: 3px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
+/* Fun Loading Animation */
+.loading {
         /* Fun Loading Animation */
         .loading {
             position: fixed;
@@ -577,7 +631,51 @@
             transform: scale(1.02);
             box-shadow: var(--shadow-lg);
         }
+/* Enhanced Section Titles */
+.section-title {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+    position: relative;
+    text-align: center;
+}
 
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 6px;
+    background: var(--accent-gradient);
+    border-radius: 3px;
+}
+
+/* Enhanced Cards with Better Visual Separation */
+    .service-item::before,
+    .contact-item::before,
+    .stat-item::before {
+    height: 6px; /* Make accent lines thicker */
+}
+
+    .service-item,
+    .contact-item,
+    .stat-item,
+    .timeline-content {
+    border: 2px solid transparent;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+    .service-item:hover,
+    .contact-item:hover,
+    .stat-item:hover,
+    .timeline-content:hover {
+    border-color: var(--accent-primary);
+}
         /* Interactive Services Section */
         .services {
             padding: 100px 0;
@@ -1105,6 +1203,8 @@
     </style>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+        <a href="#home" class="skip-link">Skip to main content</a>
     <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="loading-text">Loading awesome content...</div>
